@@ -7,22 +7,29 @@ function agregarAmigo () {
     //Se usa condicional para evitar que el campo este vacio
     if(amigo !== "") {
         listaAmigos.push(amigo);
-        console.log(listaAmigos)
-         
-        //esto renderiza cadauno de los nombres de amigos ingresados  
-        const resultado = document.getElementById('listaAmigos');
-        resultado.innerHTML += `<li>${amigo}</li>`;
-        //aqui se blanquea el campo del input
-        document.getElementById('amigo').value = "";
-    
+        actualizarListaDeAmigos(); 
     //En caso de estar vacio se envia mensaje
     } else {
         alert('Ingrese un nombre, el campo no puede estar vacio');
-    }
-    //se manipula el DOM para posicionar el cursor en el input una vez ingresado un nombre 
-    document.getElementById('amigo').focus(); 
-    
+    }       
 }
+
+
+function actualizarListaDeAmigos () {
+    //esto renderiza cadauno de los nombres de amigos ingresados  
+    const resultado = document.getElementById('listaAmigos');
+    // se blanque aqui lo contenido en la constante para que no se duplique los datos de la listaAmigos
+    resultado.innerHTML = " "
+    //se recorre el arreglo y se va renderizando o mostrando cada uno de los amigos
+    for (let i = 0; i < listaAmigos.length; i++) {
+    resultado.innerHTML += `<li>${listaAmigos[i]}</li>`};
+    //aqui se blanquea el campo del input
+    const input = document.getElementById('amigo');
+    input.value = " ";
+    //se manipula el DOM para posicionar el cursor en el input una vez ingresado un nombre 
+    input.focus(); 
+}
+
 
 function sortearAmigo() {
     //Se crea variable que usa el arreglo y efectua la seleccion aleatoria de sus registros
@@ -32,3 +39,6 @@ function sortearAmigo() {
     //Se renderiza el valor de la varible que previamente hizo la seleccion aleatoria
     const muestraAmigoSecreto = document.getElementById('resultado').innerHTML =`<li>${amigoSecreto}</li>`;
 }
+
+
+
