@@ -13,4 +13,4 @@ amigo, selccionara el programa uno de los nombres ingresados de manera aleatoria
 
 ##Autor##
 
-Johan Gonzalez Martinez
+Johan Jeampiero Gonzalez Martinez
