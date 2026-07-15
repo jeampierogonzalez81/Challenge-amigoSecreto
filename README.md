@@ -11,6 +11,6 @@ lo que debe hacer el usuario es colocar el nombre de un amigo, y
 el mismo saldra listado abajo. y al presionar el boton Sortear
 amigo, selccionara el programa uno de los nombres ingresados de manera aleatoria.
 
-## Autor ##
+### Autor ###
 
 *** Johan Jeampiero Gonzalez Martinez ***
