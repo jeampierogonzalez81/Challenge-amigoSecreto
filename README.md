@@ -3,7 +3,7 @@
 Esta es una aplicación sencilla creada con HTML, CSS y JavScript.
 usando tres funciones como se solicitaba. Las cuales 
 realizan   operaciones con listas o arreglos para agregar datos y renderizar
-manipulando el DOM de manera dinamica.
+Manipulando el DOM de manera dinamica.
 
 ### Como usar la aplicación ###
 
